@@ -1,0 +1,391 @@
+/* 首页CSS样式 */
+/* 版心居中代码 */
+.wrapper {
+    margin: 0 auto;
+    width: 1200px;
+}
+body {
+    background-color: #f3f5f7;
+}
+/* 头部区域 */
+.header {
+    background-color: #fff;
+    height: 100px;
+}
+
+.header .wrapper {
+    padding-top: 29px;
+    display: flex;
+  }
+/* logo区域 */
+.header .wrapper .logo a {
+    /* 切换行内显示模式 */
+    display: block;  
+    width: 195px;
+    height: 41px;
+    background-image: url(../images/logo.png);
+    /* 隐藏字体 */
+    font-size: 0;
+}
+/* 导航区域 */
+.header .wrapper .nav {
+    margin-left: 102px;
+}
+
+.header .wrapper .nav ul {
+    display: flex;
+}
+
+.header .wrapper .nav ul li {
+    margin-right: 24px;
+}
+
+.header .wrapper .nav ul li a {
+    display: block;
+    padding: 6px 8px;
+    line-height: 27px;
+    font-size: 19px;
+}
+
+/* active是类选择器，表示默认选中的a */
+.header .wrapper .nav ul li .active,
+.header .wrapper .nav ul li a:hover {
+    border-bottom: 2px solid #00a4ff;
+}
+/* 搜索区域 */
+.search {
+    display: flex;
+    margin-left: 64px;
+    padding-left: 19px;
+    padding-right: 12px;
+    width: 412px;
+    height: 40px;
+    background-color: #f3f5f7;
+    border-radius: 20px;
+}
+
+.search input {
+    flex: 1;
+    border: none;
+    background-color: transparent;
+    /* 去掉焦点框 */
+    outline: none;
+}
+/* ::placeholder选中就是placeholder属性文字样式 */
+.search input::placeholder {
+    color: #999;
+    font-size: 14px;
+}
+
+/* 此时父级是flex布局，子级变成弹性盒子，所以子级的宽度会自动撑开 */
+.search a {
+    /* display: block; */
+    align-self: center;
+    width: 16px;
+    height: 16px;
+    background-image: url(../images/search.png);
+}
+
+/* 用户区域 */
+.user {
+    margin-left: 32px;
+    margin-top: 4px;
+}
+
+.user img {
+    margin-right: 7px;
+    /* vertical-align行内快和行内垂直方向对齐方式 */
+    vertical-align: middle;
+}
+
+.user span {
+    font-size: 16px;
+    color: #666;
+}
+/* banner区域 */
+.banner {
+    height: 420px;
+    background-color: #0092cb;
+}
+
+.banner .wrapper {
+    display: flex;
+    justify-content: space-between;
+    height: 420px;
+    background-image: url(../uploads/banner.png);
+}
+/* 左侧导航区域 */
+.banner .wrapper .left {
+    padding: 3px 20px;
+    width: 191px;
+    height: 420px;
+    background-color: rgba(0, 0, 0, 0.42);
+}
+
+.banner .wrapper .left a {
+    display: block;
+    height: 46px;
+    background: url(../images/right.png) no-repeat right center;
+    line-height: 46px;
+    font-size: 16px;
+    color: #fff;
+}
+/* 侧导航选中样式 */
+.banner .wrapper .left a:hover {
+    background-image: url(../images/right_hover.png);
+    color: #00a4ff;
+}
+/* 右侧导航区域 */
+.banner .wrapper .right {
+    margin-top: 60px;
+    width: 218px;
+    height: 305px;
+    background-color: #209dd5;
+    border-radius: 10px;
+}
+
+.banner .wrapper .right h3 {
+    margin-left: 14px;
+    height: 48px;
+    line-height: 48px;
+    font-size: 15px;
+    color: white;
+    font-weight: 400;
+}
+
+.banner .wrapper .right .content {
+    padding: 14px;
+    height: 257px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.banner .wrapper .right .content dl {
+    margin-bottom: 12px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.banner .wrapper .right .content dl dt {
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #333;
+    line-height: 20px;
+    font-weight: 700;
+}
+
+.banner .wrapper .right .content dl dd {
+    margin-bottom: 8px;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.banner .wrapper .right .content dl dd span {
+    color: #00a4ff;
+}
+
+.banner .wrapper .right .content dl dd strong {
+    font-weight: 400;
+    color: #7d7d7d
+}
+
+.banner .wrapper .right .content a{
+    display: block;
+    height: 32px;
+    background-color: #00a4ff;
+    line-height: 32px;
+    text-align: center;
+    border-radius: 16px;
+    font-style: 14px;
+    color: #fff;
+}
+/* 精品推荐 */
+.recommend {
+    display: flex;
+    margin-top: 11px;
+    padding: 0 20px;
+    height: 60px;
+    background-color: #fff;
+    box-shadow: 0 1px 2px 0 rgba(211,211, 211, 0.5);
+    line-height: 60px;
+}
+
+.recommend h3 {
+    padding: 0 18px;
+    font-size: 18px;
+    color: #00a4ff;
+    font-weight: 400;
+}
+
+.recommend ul {
+    display: flex;
+    flex: 1;
+}
+
+.recommend ul li a {
+    padding: 0 24px;
+    border-right: 1px solid #e0e0e0;
+    font-size: 18px;
+}
+
+.recommend ul li:last-child a {
+    border-right: none;
+}
+
+.recommend .modify {
+    font-size: 16px;
+    color: #00a4ff;
+}
+/* 精品课程 */
+.course {
+    margin-top: 15px;    
+}
+/* 公共类 */
+.hd {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    line-height: 60px;
+}
+
+.hd h3 {
+    font-style: 21px;
+    font-weight: normal;
+}
+
+.hd .more {
+    padding-right: 20px;
+    background: url(../images/more.png) no-repeat right center;
+    font-size: 14px;
+    color: #999;
+}
+/* 课程内容（公共类） */
+.bd  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.bd li {
+    margin-bottom: 14px;
+    width: 228px;
+    height: 271px;
+    /* background-color: pink; */
+}
+
+.bd li .pic {
+    height: 156px;
+}
+
+.bd li .text {
+    padding: 20px;
+    height: 115px;
+    background-color: #fff;
+}
+
+.bd li .text h4 {
+    margin-bottom: 13px;
+    height: 40px;
+    line-height: 20px;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.bd li .text p {
+    font-size: 14px;
+    line-height: 20px;
+    color: #999;
+}
+
+.bd li .text p span {
+    color: #fa6400;
+}
+
+.bd li .text p i {
+    font-style: normal;
+}
+/* 前端开发工程师区域 */
+.hd ul {
+    display: flex;
+}
+
+.hd ul li {
+    margin-right: 60px;
+    font-size: 16px;
+}
+
+.hd ul li .active {
+    color: #00a4ff;
+}
+
+.bd {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bd .left {
+    width: 228px;
+}
+
+.bd .right {
+    width: 957px;
+}
+
+.bd .right .top {
+    margin-bottom: 15px;
+    height: 100px;
+}
+/* 版权区域 */
+.footer {
+    margin-top: 60px;
+    padding-top: 60px;
+    height: 273px;
+    background-color: #fff;
+}
+
+.footer .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .wrapper .left {
+    width: 440px;
+}
+
+.footer .wrapper .left p {
+    margin-top: 24px;
+    margin-bottom: 14px;
+    font-size: 12px;
+    line-height: 17px;
+    color: #666;
+}
+
+.footer .wrapper .left .download {
+    display: block;
+    width: 120px;
+    height: 36px;
+    border: 1px solid #00a4ff;
+    font-size: 16px;
+    color: #00a4ff;
+    text-align: center;
+    line-height: 34px;
+}
+
+.footer .wrapper .right {
+    display: flex;
+}
+
+.footer .wrapper .right dl {
+    margin-left: 130px;
+}
+
+.footer .wrapper .right dl dt {
+    margin-bottom: 12px;
+    font-size: 16px;
+    line-height: 23px;
+}
+
+.footer .wrapper .right dl dd {
+    font-size: 14px;
+    line-height: 24px;
+    color: #666;
+}
