@@ -96,6 +96,7 @@ body {
     margin-right: 7px;
     /* vertical-align行内快和行内垂直方向对齐方式 */
     vertical-align: middle;
+    border-radius: 15px;
 }
 
 .user span {
